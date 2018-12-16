@@ -5,16 +5,8 @@ public class MyOwnHashMap {
     private static final int SIZE = 16;
     private Entry table[] = new Entry[SIZE];
  
-    /**
-     * User defined simple Map data structure
-     * with key and value.
-     * This is also used as linked list in case multiple
-     * key-value pairs lead to the same bucket with same
-     * hashcodes and different keys (collisions) using
-     * pointer 'next'.
-     *
-     * @author ntallapa
-     */
+
+     
     class Entry {
         final String key;
         String value;
