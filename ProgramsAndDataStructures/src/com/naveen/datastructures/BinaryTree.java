@@ -51,14 +51,19 @@ public class BinaryTree
     }
  
     /* Driver program to test above functions */
+    //The left sub-tree of a node has a key less than or equal to its parent node's key.
+
+//The right sub-tree of a node has a key greater than to its parent node's key.
     public static void main(String args[])
     {
         BinaryTree tree = new BinaryTree();
-        tree.root = new Node1(4);
-        tree.root.left = new Node1(2);
-        tree.root.right = new Node1(5);
-        tree.root.left.left = new Node1(1);
-        tree.root.left.right = new Node1(3);
+        tree.root = new Node1(50);
+        tree.root.left = new Node1(30);
+        tree.root.right = new Node1(60);
+        tree.root.right.left = new Node1(55);
+        tree.root.left.left = new Node1(20);
+        tree.root.left.right = new Node1(40);
+        
  
         if (tree.isBST())
             System.out.println("IS BST");
